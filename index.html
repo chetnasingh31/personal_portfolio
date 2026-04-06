@@ -1,0 +1,516 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CHETNA SIKARWAR - Data Analyst and Software Developer portfolio featuring projects, skills, education, and experience."
+    />
+    <title>CHETNA SIKARWAR | Data Analyst & Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="loader" id="loader" aria-hidden="true">
+      <span class="loader-ring"></span>
+      <p>Loading Portfolio</p>
+    </div>
+
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <canvas id="particles" aria-hidden="true"></canvas>
+
+    <div class="bg-effects" aria-hidden="true">
+      <span class="effect effect-one"></span>
+      <span class="effect effect-two"></span>
+      <span class="effect effect-three"></span>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="Go to home">
+          <span class="brand-mark">CS</span>
+          <span class="brand-text">CHETNA SIKARWAR</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="siteNav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="siteNav" class="site-nav">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#achievements" class="nav-link">Achievements</a>
+          <a href="#responsibility" class="nav-link">Responsibility</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <p class="eyebrow">Data Analyst & Software Developer</p>
+            <h1>CHETNA SIKARWAR</h1>
+            <p class="hero-role" aria-live="polite">
+              <span id="typingText"></span>
+            </p>
+            <p class="hero-summary">
+              Building data-driven applications and analytical experiences with Python, SQL, Machine Learning, and
+              modern software engineering practices.
+            </p>
+
+            <div class="hero-meta">
+              <p><i class="fa-solid fa-location-dot"></i> Indore, India</p>
+              <p><i class="fa-solid fa-phone"></i> <a href="tel:+918103771967">+91 8103771967</a></p>
+              <p>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:chetnasikarwar703@gmail.com">chetnasikarwar703@gmail.com</a>
+              </p>
+            </div>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="chetna_sikarwar_CV.pdf" download="chetna_sikarwar_CV.pdf">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                Download Resume
+              </a>
+              <a class="btn btn-secondary" href="#projects">
+                <i class="fa-solid fa-diagram-project"></i>
+                View Projects
+              </a>
+            </div>
+
+            <div class="hero-social">
+              <a href="https://linkedin.com/in/chetna-sikarwar-590141262" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                LinkedIn
+              </a>
+              <a href="https://github.com/chetnasingh31" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <aside class="hero-card reveal">
+            <div class="glass-card profile-card tilt-3d">
+              <h2>Core Focus</h2>
+              <ul>
+                <li>Data Analytics and EDA for decision-ready insights</li>
+                <li>Software development with Python, Java, and SQL</li>
+                <li>Machine learning driven problem solving</li>
+                <li>Dashboard storytelling with Tableau, Excel, and Charts.js</li>
+              </ul>
+              <div class="profile-tags">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Machine Learning</span>
+                <span>Flask</span>
+                <span>Tableau</span>
+              </div>
+            </div>
+            <div class="scene-3d" aria-hidden="true">
+              <div class="cube-orbit"></div>
+              <div class="data-cube">
+                <span class="cube-face front"><i class="fa-solid fa-chart-line"></i></span>
+                <span class="cube-face back"><i class="fa-solid fa-database"></i></span>
+                <span class="cube-face right"><i class="fa-solid fa-code"></i></span>
+                <span class="cube-face left"><i class="fa-solid fa-brain"></i></span>
+                <span class="cube-face top"><i class="fa-solid fa-bolt"></i></span>
+                <span class="cube-face bottom"><i class="fa-solid fa-cubes"></i></span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">About Me</p>
+            <h2>Turning Complex Data Into Real-World Products</h2>
+          </div>
+          <article class="glass-card reveal">
+            <p>
+              Data Analyst and Software Developer skilled in Python, SQL, Machine Learning, EDA, and dashboard
+              development. Experienced in building data-driven applications and delivering actionable insights through
+              real-world projects and internships.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Education</p>
+            <h2>Academic Journey</h2>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <h3>B.Tech - SGSITS Indore (RGPV)</h3>
+              <p>2027</p>
+            </article>
+            <article class="timeline-item reveal">
+              <h3>Diploma - Govt. Women's Polytechnic College (RGPV)</h3>
+              <p>2024 - 89%</p>
+            </article>
+            <article class="timeline-item reveal">
+              <h3>12th - CBSE</h3>
+              <p>2021 - 84.2%</p>
+            </article>
+            <article class="timeline-item reveal">
+              <h3>10th - CBSE</h3>
+              <p>2019 - 88%</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Experience</p>
+            <h2>Internships</h2>
+          </div>
+          <div class="card-grid two-col">
+            <article class="glass-card reveal">
+              <div class="card-title">
+                <h3>Data Analyst Intern</h3>
+                <span>Jun 2025 - Jul 2025</span>
+              </div>
+              <p class="org">CODTECH IT SOLUTIONS</p>
+              <ul>
+                <li>Data cleaning using Pandas, NumPy</li>
+                <li>SQL queries optimization</li>
+                <li>EDA and dashboard creation</li>
+              </ul>
+            </article>
+            <article class="glass-card reveal">
+              <div class="card-title">
+                <h3>Java Developer Intern</h3>
+                <span>May 2025 - Jun 2025</span>
+              </div>
+              <p class="org">StaxTech</p>
+              <ul>
+                <li>Backend development using Java</li>
+                <li>Debugging, optimization, Git collaboration</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Projects</p>
+            <h2>Featured Portfolio Work</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card reveal tilt-3d">
+              <h3>AI Job Analyzer</h3>
+              <p>
+                Intelligent matching system that analyzes job descriptions and candidate profiles using NLP and ML to
+                highlight fit and skill gaps.
+              </p>
+              <div class="badges">
+                <span>Python</span>
+                <span>NLP</span>
+                <span>Machine Learning</span>
+              </div>
+              <a class="project-link" href="https://github.com/chetnasingh31/ai-job-analyzer" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+              </a>
+            </article>
+
+            <article class="project-card reveal tilt-3d">
+              <h3>e-RUPI Voucher System</h3>
+              <p>
+                Government-focused voucher management system for transparent beneficiary distribution, tracking, and
+                secure redemption workflows.
+              </p>
+              <div class="badges">
+                <span>Govt Project</span>
+                <span>Digital Payments</span>
+                <span>Verification</span>
+              </div>
+              <a class="project-link" href="https://github.com/chetnasingh31" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+              </a>
+            </article>
+
+            <article class="project-card reveal tilt-3d">
+              <h3>QuickCourt</h3>
+              <p>
+                Full-stack sports booking platform with scheduling flow, role-driven access, and analytics dashboards
+                to track booking activity.
+              </p>
+              <div class="badges">
+                <span>Full Stack</span>
+                <span>Flask</span>
+                <span>JavaScript</span>
+              </div>
+              <a class="project-link" href="https://github.com/chetnasingh31/quickcourt" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+              </a>
+            </article>
+
+            <article class="project-card reveal tilt-3d">
+              <h3>Samudra Suraksha</h3>
+              <p>
+                Coastal monitoring system built for alerting and visibility, combining live tracking concepts with
+                responsive interfaces for operational clarity.
+              </p>
+              <div class="badges">
+                <span>Monitoring</span>
+                <span>Flask</span>
+                <span>Geospatial</span>
+              </div>
+              <a class="project-link" href="https://github.com/chetnasingh31/samudra-suraksha" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Skills</p>
+            <h2>Technical Skillset</h2>
+          </div>
+
+          <div class="skills-layout">
+            <article class="glass-card reveal">
+              <h3><i class="fa-solid fa-code"></i> Programming</h3>
+              <div class="skill-item">
+                <div class="skill-line"><span>Python, Java, C, C++, SQL, R</span><span>92%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="92"></div></div>
+              </div>
+            </article>
+
+            <article class="glass-card reveal">
+              <h3><i class="fa-solid fa-database"></i> Data</h3>
+              <div class="skill-item">
+                <div class="skill-line"><span>Pandas, NumPy, ML, EDA</span><span>90%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="90"></div></div>
+              </div>
+            </article>
+
+            <article class="glass-card reveal">
+              <h3><i class="fa-solid fa-chart-line"></i> Visualization</h3>
+              <div class="skill-item">
+                <div class="skill-line"><span>Tableau, Excel, Charts.js</span><span>88%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="88"></div></div>
+              </div>
+            </article>
+
+            <article class="glass-card reveal">
+              <h3><i class="fa-solid fa-globe"></i> Web</h3>
+              <div class="skill-item">
+                <div class="skill-line"><span>HTML, CSS, JS, Flask</span><span>87%</span></div>
+                <div class="skill-track"><div class="skill-fill" data-level="87"></div></div>
+              </div>
+            </article>
+
+            <article class="glass-card reveal">
+              <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h3>
+              <div class="tool-badges">
+                <span>MySQL</span>
+                <span>BigQuery</span>
+                <span>Git</span>
+                <span>Linux</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="achievements">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Achievements</p>
+            <h2>Recognition</h2>
+          </div>
+
+          <div class="achievement-grid">
+            <article class="achievement-card reveal">Google Data Analytics Certificate</article>
+            <article class="achievement-card reveal">4-star Python on HackerRank</article>
+            <article class="achievement-card reveal">2nd position in iStudent Hackathon</article>
+            <article class="achievement-card reveal">MP Govt real-time project</article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="responsibility">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Positions of Responsibility</p>
+            <h2>Leadership and Coordination</h2>
+          </div>
+
+          <div class="card-grid three-col">
+            <article class="glass-card reveal">
+              <h3>Volunteer Head</h3>
+              <p>AAYAM Fest</p>
+            </article>
+            <article class="glass-card reveal">
+              <h3>Secretary</h3>
+              <p>Student Committee</p>
+            </article>
+            <article class="glass-card reveal">
+              <h3>Event Manager</h3>
+              <p>School Function</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Let's Collaborate</h2>
+          </div>
+
+          <div class="contact-layout">
+            <article class="glass-card reveal contact-info">
+              <h3>Reach Out</h3>
+              <p>I'm open to internship, project collaboration, and full-time opportunities in analytics and software.</p>
+
+              <div class="contact-links">
+                <a href="mailto:chetnasikarwar703@gmail.com">
+                  <i class="fa-solid fa-envelope"></i>
+                  chetnasikarwar703@gmail.com
+                </a>
+                <a href="tel:+918103771967">
+                  <i class="fa-solid fa-phone"></i>
+                  +91 8103771967
+                </a>
+                <a href="https://linkedin.com/in/chetna-sikarwar-590141262" target="_blank" rel="noreferrer">
+                  <i class="fa-brands fa-linkedin"></i>
+                  linkedin.com/in/chetna-sikarwar-590141262
+                </a>
+                <a href="https://github.com/chetnasingh31" target="_blank" rel="noreferrer">
+                  <i class="fa-brands fa-github"></i>
+                  github.com/chetnasingh31
+                </a>
+              </div>
+            </article>
+
+            <form
+              id="contactForm"
+              class="glass-card contact-form reveal"
+              action="https://formsubmit.co/chetnasikarwar703@gmail.com"
+              method="POST"
+              novalidate
+            >
+              <h3>Send a Message</h3>
+              <input type="hidden" name="_subject" value="Portfolio Contact Message" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_autoresponse" value="Thank you for contacting Chetna. Your message has been received." />
+              <input
+                type="text"
+                name="_honey"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+                style="display: none"
+              />
+
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your full name" required minlength="2" />
+                <small class="field-error" data-error-for="name"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                <small class="field-error" data-error-for="email"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell me about your opportunity"
+                  required
+                  minlength="10"
+                ></textarea>
+                <small class="field-error" data-error-for="message"></small>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                <i class="fa-solid fa-paper-plane"></i>
+                Send Message
+              </button>
+
+              <p class="form-status" id="formStatus" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button id="backToTop" class="back-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>(c) <span id="year"></span> CHETNA SIKARWAR</p>
+        <div class="footer-social">
+          <a href="https://linkedin.com/in/chetna-sikarwar-590141262" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/chetnasingh31" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:chetnasikarwar703@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+
+
